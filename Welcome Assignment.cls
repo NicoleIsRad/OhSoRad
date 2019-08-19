@@ -26,8 +26,8 @@ public with sharing class Welcome {
 
         //This is the first time I have ever independently wrote any code.
         /* I am excited, even if it only a "comment".  
-         * I am looking forward to learning and understanding more about how all of this works.
-         * I cannot wait to see what is in store! */ 
+        I am looking forward to learning and understanding more about how all of this works.
+        I cannot wait to see what is in store! */ 
         
 
     }
