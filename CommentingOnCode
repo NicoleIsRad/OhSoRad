@@ -6,17 +6,22 @@ public with sharing class CommentingOnCodeExercise {
      */
 
     public static void cartValues() {
-
+        // This is declaring a variable of the integer type, for the minimum cart value of 50  
         Integer minimumCartValue = 50;
-
+        
+        //This declares variables of the integer type for items in the cart for potential values for 3 items in the cart
         Integer itemA = 10;
         Integer itemB = 20;
         Integer itemC = 45;
-
+        
+        //This declares another variable of the integer type, with an initial value of the sum of itemA and itemB
         Integer cartValue = itemA + itemB;
-
+        
+        /* This declares a variable of the boolean type, deciding if the cart minimum is met 
+        based on the variables defined above */
         Boolean cartMinimumMet = cartValue >= minimumCartValue;
 
+        //
         System.debug('Have we reached the minimum: ' + cartMinimumMet);
 
         cartValue = cartValue + itemC;
