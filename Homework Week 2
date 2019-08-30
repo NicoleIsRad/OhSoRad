@@ -99,10 +99,11 @@ public with sharing class WeekTwoHomework {
 
         // 1. Write a comparison statement that evauates to false and assign the result to our result variable
         //Don't forget to maintain indentation!
-
-
+        
+        Boolean isSmaller
+        
         // 2. Declare another boolean variable and write a comparison that evaluates to true, assign it to your variable
-
+        isSmaller = c < d;
 
     }
 
@@ -127,7 +128,7 @@ public with sharing class WeekTwoHomework {
         System.debug('size of anotherListOfStrings: ' + anotherListOfStrings.size()); //this will print out 3 in the debug log.
         //You can find all the built-in list methods here: https://developer.salesforce.com/docs/atlas.en-us.198.0.apexcode.meta/apexcode/apex_methods_system_list.htm#apex_System_List_methods
 
-
+e
         //Can we declare a list and add values at the same time?  Of course!  Let's declare a list of integers and add 1, 2 & 3 to the list
         List<Integer> listOfIntegers = new List<Integer>{ 1, 2, 3 }; //Everything in the curly braces, separated by commas, is added to the list
         System.debug('Contents of listOfIntegers: ' + listOfIntegers);
@@ -163,9 +164,11 @@ public with sharing class WeekTwoHomework {
         //You do this part!
 
         //1.  Declare a list of Strings called myStringList
+        List<String> myStringList = new List<String>();
 
         //2.  Add three string values to your list and print it out in the debug log
-
+        myStringList .addThree(new List<String> {'Doo', 'Da', 'Dee'});
         //3.  Print out the third value in your list of strings using list indexing.
 
         //4.  Declare a list of integers and add the values 1,2,3,4,5 all in one line
+        List<Integer> listOfIntegers = new List<Integer>{ 1, 2, 3,4,5 };
