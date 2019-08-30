@@ -21,13 +21,17 @@ public with sharing class CommentingOnCodeExercise {
         based on the variables defined above */
         Boolean cartMinimumMet = cartValue >= minimumCartValue;
 
-        //
+        //This runs a system debug, This checks to see if the programming both makes sense and produces a result
         System.debug('Have we reached the minimum: ' + cartMinimumMet);
 
+        /* Since the first intial value of the sum of iteamA and itemB did not meet the requirement
+        it is now adding in the 3rd item. */
         cartValue = cartValue + itemC;
 
+        //The minimum cart value is greater than the minimum 
         cartMinimumMet = cartValue >= minimumCartValue;
 
+        //System debug has determined this cart value is valid, this is good to go!
         System.debug('How about now? : ' + cartMinimumMet);
 
     }
