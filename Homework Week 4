@@ -16,22 +16,28 @@ public with sharing class WeekFourHomework {
     //1.  Write a public method that calls the getCitiesForExpansion method to get a list of cities, then add
     //another city to the list before printing it to the debug log.
     //(see the sample above for an example of calling that method-You can even start by copying and pasting that method here, renaming and modifying it)
-     {
+     
      public static void AddCities()
-     List<String> cities = getCitiesForExpansion();
-     cities.add('Chicago');
+     
+     {
+     
+        List<String> cities = getCitiesForExpansion();
+        cities.add('Chicago');
      
      System.debug('Here are the cities: ' + cities);
+    
     }
 
     //2.Write a public method that calls the isTopSalesCity method and prints out the returned boolean to the debug log.
     //You'll need to pass in a string variable that is a city name as the argument!
-    {
+    
     
      public static void getTopSalesCityValue() 
-     boolean topSalesCity = isTopSalesCity ('Chicago');
      
-     system.debug('Is top sales city: ' + topSalesCity);
+     {
+         boolean topSalesCity = isTopSalesCity ('Chicago');
+     
+        system.debug('Is top sales city: ' + topSalesCity);
      
      }
 
