@@ -44,6 +44,13 @@ public with sharing class WeekFourHomework {
     //3.  BONUS!!  If you've finished the first two, there's another public method below that will return the top 10 Accounts
     //Write a public method that calls getTopTenAccounts.  Can you loop through those accounts and change the name of those accounts with a DML Update?
 
+   public static void updateNames() {
+       List<Account> topAccounts = getTopTenAccounts();
+       for (Account a : topAccounts ) {
+          a.Name = 'Updated:' + a.Name;
+       }    
+       upsert topAccounts;
+    }
 
     //no arguments taken, will return the same thing every time
     public static List<String> getCitiesForExpansion() {
