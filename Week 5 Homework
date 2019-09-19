@@ -6,15 +6,33 @@ public with sharing class WeekFiveHomework {
         //Your assignment: Play with Sets!
 
         // 1.  Create a set of Strings and add at least 5 entries
+        
+        Set <String> favoriteFoods  = new Set <String>();
+        	    favoriteFoods.add ('Tacos');
+                favoriteFoods.add ('Pizza');
+                favoriteFoods.add ('Sushi');
+                favoriteFoods.add ('Pasta');
+                favoriteFoods.add ('Cheese');
+                
+        System.debug(favoriteFoods);
 
         //Use System.debug to print out the size of your set
 
+            22:50:45:006 USER_DEBUG [8]|DEBUG|{Cheese, Pasta, Pizza, Sushi, Tacos}
 
         //Add an item to your set that already exists
-
+        
+        Set <String> favoriteFoods  = new Set <String>();
+        	    favoriteFoods.add ('Tacos');
+                favoriteFoods.add ('Pizza');
+                favoriteFoods.add ('Sushi');
+                favoriteFoods.add ('Pasta');
+                favoriteFoods.add ('Cheese');
+                favoriteFoods.add ('Tacos');
 
         //Use System.debug to print out the size again,  they should be the same!
 
+            22:56:32:012 USER_DEBUG [9]|DEBUG|{Cheese, Pasta, Pizza, Sushi, Tacos}
 
 
         // 2.  Bonus Points!  Check out the documentation on Sets. Go to the section titled Set Methods. Pick one of the methods to try out and print the results to the debug log.  
