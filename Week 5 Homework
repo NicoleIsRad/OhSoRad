@@ -8,7 +8,7 @@ public with sharing class WeekFiveHomework {
         // 1.  Create a set of Strings and add at least 5 entries
         
         Set <String> favoriteFoods  = new Set <String>();
-        	    favoriteFoods.add ('Tacos');
+                favoriteFoods.add ('Tacos');
                 favoriteFoods.add ('Pizza');
                 favoriteFoods.add ('Sushi');
                 favoriteFoods.add ('Pasta');
@@ -23,7 +23,7 @@ public with sharing class WeekFiveHomework {
         //Add an item to your set that already exists
         
         Set <String> favoriteFoods  = new Set <String>();
-        	    favoriteFoods.add ('Tacos');
+                favoriteFoods.add ('Tacos');
                 favoriteFoods.add ('Pizza');
                 favoriteFoods.add ('Sushi');
                 favoriteFoods.add ('Pasta');
@@ -50,9 +50,24 @@ public with sharing class WeekFiveHomework {
         // Try to add at least 5 Key/value pairs.
 
 
+             public static void myWinePairings()
+             
+             {
+             Map <String, String> myWinePairings = new Map <String, String>();
+             
+             myWinePairings.put('Sauvignon Blanc', 'Goat Cheese');
+             myWinePairings.put('Chardonnay', 'Asiago');
+             myWinePairings.put('Riesling', 'Brie');
+             myWinePairings.put ('Merlot', 'Pecorino-Romano');
+             myWinePairings.put ('Cabernet Sauvignon', 'Gorgonzola');        
+        
+        system.debug(myWinePairings);
+
+
         //Now, in the debug log, print out  a list of the values.
 
-
+        23:38:34:004 USER_DEBUG [9]|DEBUG|{Cabernet Sauvignon=Gorgonzola, Chardonnay=Asiago, Merlot=Pecorino-Romano, Riesling=Brie, Sauvignon Blanc=Goat Cheese}
+        
         //Can you print out a set of the Keys?
 
 
@@ -68,15 +83,53 @@ public with sharing class WeekFiveHomework {
 
         // 1. Create a list of Strings.  Add at least 5 entries to the list, all in one line
 
+        List <String> Sports = new List<String>{'Baseball','Football','Basketball', 'Hockey', 'Soccer'}; 
+        
+         	System.debug(Sports);
+            23:48:59:002 USER_DEBUG [3]|DEBUG|(Baseball, Football, Basketball, Hockey, Soccer)
 
         // 2. Create a second list of Strings and add 5 or more entries to this list.
 
+        List <String> Sports2 = new List<String>{'Gymnastics','Ice Skating','Skiing', 'Archery', 'Curling'}; 
+        
+        Sports2.add ('Tennis');
+        Sports2.add ('Bowling');
+        Sports2.add ('Volley Ball');
+        Sports2.add ('Badminton');
+        Sports2.add ('Swimming');
+        
+         	System.debug(Sports2);
+        23:48:08:002 USER_DEBUG [9]|DEBUG|(Gymnastics, Ice Skating, Skiing, Archery, Curling, Tennis, Bowling, Volley Ball, Badminton, Swimmin    
+   
 
         //3.  Bonus! Using the documentation on standard List methods from Salesforce, add the items from your first list, to your second list with one command
         // Documentation: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_methods_system_list.htm
 
+            List<String> result=new List<String>();
+   		    result.addAll(Sports);
+   		    result.addAll(Sports2);
+            
+            System.debug (result);
 
         //4.  Can you now loop through your combined list and print it to the debug log?  (Hint:  Check the documentation!)
+        
+        List <String> Sports = new List<String>{'Baseball','Football','Basketball', 'Hockey', 'Soccer'}; 
+        
+             List <String> Sports2 = new List<String>{'Gymnastics','Ice Skating','Skiing', 'Archery', 'Curling'}; 
+        
+            Sports2.add ('Tennis');
+            Sports2.add ('Bowling');
+            Sports2.add ('Volley Ball');
+            Sports2.add ('Badminton');
+            Sports2.add ('Swimming');
+        
+        
+                List<String> result=new List<String>();
+   		        result.addAll(Sports);
+   		        result.addAll(Sports2);
+            
+          System.debug (result);
+23:54:49:003 USER_DEBUG [16]|DEBUG|(Baseball, Football, Basketball, Hockey, Soccer, Gymnastics, Ice Skating, Skiing, Archery, Curling, ...)
 
     }
 
